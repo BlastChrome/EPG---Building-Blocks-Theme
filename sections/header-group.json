@@ -2,6 +2,25 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "header": {
+      "type": "header",
+      "settings": {
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "logo_position": "middle-center",
+        "menu": "main-menu-2",
+        "highlight_active_link": true,
+        "highlighted_link_color_scheme": "accent-1",
+        "mobile_menu_title": "Menu",
+        "secondary_menu": "footer",
+        "menu_color_scheme": "background-1",
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
     "2c2ec774-3430-481f-b927-e9c035b9d24e": {
       "type": "horizontal-ticker",
       "blocks": {
@@ -30,15 +49,15 @@
         "sections--18060430639399__2c2ec774-3430-481f-b927-e9c035b9d24e-1679250655d32e639c-2"
       ],
       "settings": {
-        "speed": 3,
+        "speed": 1,
         "text_spacing": 3,
-        "text_size": "1.75",
+        "text_size": "1.25",
         "italic_text": false,
         "uppercase_text": false,
-        "bold_text": false,
-        "color_scheme": "accent-1",
-        "padding_top": 16,
-        "padding_bottom": 16
+        "bold_text": true,
+        "color_scheme": "accent-2",
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "announcement-bar": {
@@ -59,30 +78,11 @@
       ],
       "settings": {
       }
-    },
-    "header": {
-      "type": "header",
-      "settings": {
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
-        "color_scheme": "background-1",
-        "logo_position": "middle-center",
-        "menu": "main-menu",
-        "highlight_active_link": true,
-        "highlighted_link_color_scheme": "accent-1",
-        "mobile_menu_title": "Menu",
-        "secondary_menu": "footer",
-        "menu_color_scheme": "background-1",
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
     }
   },
   "order": [
+    "header",
     "2c2ec774-3430-481f-b927-e9c035b9d24e",
-    "announcement-bar",
-    "header"
+    "announcement-bar"
   ]
 }

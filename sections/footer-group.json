@@ -27,7 +27,7 @@
           "type": "email_signup",
           "settings": {
             "heading": "Subscribe to our emails",
-            "subtext": "<p>Stay ahead with exclusive updates, insider tips, and special offers—sign up for our mailing list today!<\/p>",
+            "subtext": "<p>Stay ahead with exclusive educational tips, special offers, and expert recommendations on the best toys to enrich your child's learning experience. Sign up today!\"<\/p>",
             "button_type": "solid",
             "button_label": "Sign up",
             "button_style_secondary": false,
@@ -42,7 +42,7 @@
         "24f208fd-0898-43eb-af23-d74f8420ab37"
       ],
       "settings": {
-        "color_scheme": "accent-1",
+        "color_scheme": "inverse",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
