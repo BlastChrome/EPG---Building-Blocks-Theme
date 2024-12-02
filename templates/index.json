@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner_pQkTrY": {
@@ -21,10 +30,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "",
-            "button_link_1": "shopify:\/\/pages\/about-us",
+            "button_link_1": "shopify://pages/about-us-old",
             "button_style_secondary_1": false,
             "button_label_2": "Shop Now",
-            "button_link_2": "shopify:\/\/collections\/all",
+            "button_link_2": "shopify://collections/all",
             "button_style_secondary_2": false
           }
         }
@@ -38,7 +47,7 @@
         ".banner__content .banner__box {background-color: #0000008c; backdrop-filter: blur(9px); border: 2px solid white; padding: 30px; max-width: 650px;}"
       ],
       "settings": {
-        "image_2": "shopify:\/\/shop_images\/egp-hero.jpg",
+        "image_2": "shopify://shop_images/egp-hero.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -55,7 +64,7 @@
       "settings": {
         "title": "Featured Toys for Bright Minds",
         "heading_size": "h2",
-        "description": "<p>Check out our curated selection of building-block toys, designed to spark curiosity and foster hands-on learning<\/p>",
+        "description": "<p>Check out our curated selection of building-block toys, designed to spark curiosity and foster hands-on learning</p>",
         "show_description": false,
         "description_style": "subtitle",
         "collection": "gadgets",
@@ -85,7 +94,7 @@
           "settings": {
             "icon": "truck",
             "title": "Free Shipping",
-            "text": "<p>Enjoy <strong>Free Shipping<\/strong> on all orders—because empowering young minds should come with ease.<\/p><p><\/p>"
+            "text": "<p>Enjoy <strong>Free Shipping</strong> on all orders—because empowering young minds should come with ease.</p><p></p>"
           }
         },
         "column_aDdU4T": {
@@ -93,15 +102,15 @@
           "settings": {
             "icon": "star",
             "title": "30-Day Money Back Guarantee",
-            "text": "<p>We're confident your child will love our toys! But if you're not satisfied, our <strong>30-Day Guarantee<\/strong> ensures peace of mind.<\/p><p><\/p>"
+            "text": "<p>We're confident your child will love our toys! But if you're not satisfied, our <strong>30-Day Guarantee</strong> ensures peace of mind.</p><p></p>"
           }
         },
         "column_QiEEFr": {
           "type": "column",
           "settings": {
             "icon": "chat_bubble",
-            "title": "24\/7 Customer Support",
-            "text": "<p>Got questions? Our <strong>24\/7 Support Team<\/strong> is here to help you find the perfect educational tools for your child.<\/p>"
+            "title": "24/7 Customer Support",
+            "text": "<p>Got questions? Our <strong>24/7 Support Team</strong> is here to help you find the perfect educational tools for your child.</p>"
           }
         },
         "column_PVY3Ye": {
@@ -109,7 +118,7 @@
           "settings": {
             "icon": "lock",
             "title": "Secure Checkout",
-            "text": "<p>Shop confidently with our <strong>Secure Checkout<\/strong>, knowing your personal data is safe every step of the way.<\/p>"
+            "text": "<p>Shop confidently with our <strong>Secure Checkout</strong>, knowing your personal data is safe every step of the way.</p>"
           }
         }
       },
