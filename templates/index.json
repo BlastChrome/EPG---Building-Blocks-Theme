@@ -24,7 +24,7 @@
             "button_link_1": "shopify:\/\/pages\/about-us",
             "button_style_secondary_1": false,
             "button_label_2": "Shop Now",
-            "button_link_2": "shopify:\/\/collections\/all",
+            "button_link_2": "shopify:\/\/products\/gear-blocks-educational-toys",
             "button_style_secondary_2": false
           }
         }
@@ -50,135 +50,217 @@
         "show_text_below": true
       }
     },
-    "featured_collection_kUjkW7": {
-      "type": "featured-collection",
+    "rich_text_PPc38H": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ej8aE3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Why Epic Gear Pros?<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rGkjwd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At <strong>Epic Gear Pros<\/strong>, we believe that play is the foundation for learning. That’s why we’ve crafted our gear blocks to do more than entertain—they inspire creativity, problem-solving, and motor skills development in children. Designed with busy moms in mind, our products are safe, fun, and built to support your child's growth. We’re passionate about helping you nurture your child’s potential, one block at a time.<\/p><p><\/p>"
+          }
+        },
+        "button_n8Nb86": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/gear-blocks-educational-toys",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "shopify:\/\/products\/gear-blocks-educational-toys",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ej8aE3",
+        "text_rGkjwd",
+        "button_n8Nb86"
+      ],
       "settings": {
-        "title": "Featured Toys for Bright Minds",
-        "heading_size": "h2",
-        "description": "<p>Check out our curated selection of building-block toys, designed to spark curiosity and foster hands-on learning<\/p>",
-        "show_description": false,
-        "description_style": "subtitle",
-        "collection": "gadgets",
-        "products_to_show": 25,
-        "columns_desktop": 5,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
         "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
-    "icon_bar_HJp9ya": {
-      "type": "icon-bar",
+    "multirow_k7NfKb": {
+      "type": "multirow",
       "blocks": {
-        "column_pVKNPg": {
-          "type": "column",
+        "row_xbD8zp": {
+          "type": "row",
           "settings": {
-            "icon": "truck",
-            "title": "Free Shipping",
-            "text": "<p>Enjoy <strong>Free Shipping<\/strong> on all orders—because empowering young minds should come with ease.<\/p><p><\/p>"
+            "image": "shopify:\/\/shop_images\/img-row-1.jpg",
+            "caption": "Our Mission",
+            "heading": "Our Mission",
+            "text": "<p>At <strong>Epic Gear Pros<\/strong>, we are dedicated to creating innovative, educational building blocks that help young minds grow. Our gear blocks promote learning, creativity, and physical development in children. Designed for mothers who are passionate about their child’s growth, we strive to offer high-quality, fun, and engaging products that make learning an exciting adventure. Each set is crafted with care to deliver not just fun but also lasting developmental benefits for your little one.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/gear-blocks-educational-toys"
           }
         },
-        "column_aDdU4T": {
-          "type": "column",
+        "row_LWd89c": {
+          "type": "row",
           "settings": {
-            "icon": "star",
-            "title": "30-Day Money Back Guarantee",
-            "text": "<p>We're confident your child will love our toys! But if you're not satisfied, our <strong>30-Day Guarantee<\/strong> ensures peace of mind.<\/p><p><\/p>"
+            "image": "shopify:\/\/shop_images\/img-row-3_bcede7e8-6efe-4f47-951f-b86c145ffdf9.jpg",
+            "caption": "Our Journey",
+            "heading": "Our Journey",
+            "text": "<p>Our journey started with a simple idea: combine fun and learning in a way that sparks both imagination and critical thinking in children. As parents and educators ourselves, we saw the need for toys that do more than entertain—they should enrich. That’s how <strong>Epic Gear Pros<\/strong> came to life. After years of development and testing with real families, our gear blocks now inspire thousands of children to think creatively, solve problems, and grow through hands-on play.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/gear-blocks-educational-toys"
           }
         },
-        "column_QiEEFr": {
-          "type": "column",
+        "row_yP6QWh": {
+          "type": "row",
           "settings": {
-            "icon": "chat_bubble",
-            "title": "24\/7 Customer Support",
-            "text": "<p>Got questions? Our <strong>24\/7 Support Team<\/strong> is here to help you find the perfect educational tools for your child.<\/p>"
-          }
-        },
-        "column_PVY3Ye": {
-          "type": "column",
-          "settings": {
-            "icon": "lock",
-            "title": "Secure Checkout",
-            "text": "<p>Shop confidently with our <strong>Secure Checkout<\/strong>, knowing your personal data is safe every step of the way.<\/p>"
+            "image": "shopify:\/\/shop_images\/img-row-2.jpg",
+            "caption": "Why We Care",
+            "heading": "Why We Care",
+            "text": "<p>We believe playtime is more than just fun—it’s a critical part of your child’s development. That’s why we created gear blocks that encourage both mental and physical growth, from fine motor skills to creative problem-solving. Our goal is to provide mothers like you with tools that foster independent thinking, creativity, and a lifelong love for learning. Every gear block set is thoughtfully designed to help your child succeed, one block at a time.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/gear-blocks-educational-toys"
           }
         }
       },
       "block_order": [
-        "column_pVKNPg",
-        "column_aDdU4T",
-        "column_QiEEFr",
-        "column_PVY3Ye"
+        "row_xbD8zp",
+        "row_LWd89c",
+        "row_yP6QWh"
       ],
       "settings": {
-        "title": "",
+        "image_height": "large",
+        "desktop_image_width": "large",
         "heading_size": "h1",
-        "text": "",
-        "icon_size": "medium",
-        "columns_desktop": 4,
-        "icon_color": "accent-1",
-        "background_style": "none",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 32,
-        "padding_bottom": 32
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-2",
+        "row_color_scheme": "background-2",
+        "mobile_content_alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
-    "collection_list_x8bbNh": {
-      "type": "collection-list",
+    "featured_product_YaDmhN": {
+      "type": "featured-product",
       "blocks": {
-        "featured_collection_GwRnUa": {
-          "type": "featured_collection",
+        "text_AcQfbR": {
+          "type": "text",
           "settings": {
-            "collection": "sports-outdoor"
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
           }
         },
-        "featured_collection_zNJ3Fm": {
-          "type": "featured_collection",
+        "title_gYGhNU": {
+          "type": "title",
           "settings": {
-            "collection": "home-improvement-and-tools"
+            "heading_size": "h1"
           }
         },
-        "featured_collection_fnjKAp": {
-          "type": "featured_collection",
+        "price_hatxBc": {
+          "type": "price",
           "settings": {
-            "collection": "frontpage"
+          }
+        },
+        "variant_picker_CaUJck": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "enable_color_swatches": false,
+            "custom_swatch_option_name": "",
+            "enable_swatches_custom_colors": false
+          }
+        },
+        "quantity_selector_4KAhwp": {
+          "type": "quantity_selector",
+          "settings": {
+            "enable_quantity_discounts": false,
+            "headline": "BUNDLE & SAVE",
+            "preselected": "option_1",
+            "display_badge": "none",
+            "badge_text": "Most Popular",
+            "enable_variant_selectors": true,
+            "option_1_quantity": 1,
+            "option_1_label": "",
+            "option_1_benefit": "",
+            "option_1_caption": "You save [amount]",
+            "option_1_discount_type": "none",
+            "option_1_percentage_off": 0,
+            "option_1_fixed_amount_off": "0",
+            "option_2_quantity": 2,
+            "option_2_label": "",
+            "option_2_benefit": "",
+            "option_2_caption": "You save [amount]",
+            "option_2_discount_type": "none",
+            "option_2_percentage_off": 0,
+            "option_2_fixed_amount_off": "0",
+            "option_3_quantity": 3,
+            "option_3_label": "",
+            "option_3_benefit": "",
+            "option_3_caption": "You save [amount]",
+            "option_3_discount_type": "none",
+            "option_3_percentage_off": 0,
+            "option_3_fixed_amount_off": "0",
+            "option_4_quantity": 4,
+            "option_4_label": "",
+            "option_4_benefit": "",
+            "option_4_caption": "You save [amount]",
+            "option_4_discount_type": "none",
+            "option_4_percentage_off": 0,
+            "option_4_fixed_amount_off": "0"
+          }
+        },
+        "buy_buttons_ANaRTd": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_mth4kc": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
       "block_order": [
-        "featured_collection_GwRnUa",
-        "featured_collection_zNJ3Fm",
-        "featured_collection_fnjKAp"
+        "text_AcQfbR",
+        "title_gYGhNU",
+        "price_hatxBc",
+        "variant_picker_CaUJck",
+        "quantity_selector_4KAhwp",
+        "buy_buttons_ANaRTd",
+        "share_mth4kc"
       ],
       "settings": {
-        "title": "Collections That Enrich Playtime",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 3,
+        "product": "gear-blocks-educational-toys",
         "color_scheme": "background-1",
-        "show_view_all": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
   "order": [
     "image_banner_pQkTrY",
-    "featured_collection_kUjkW7",
-    "icon_bar_HJp9ya",
-    "collection_list_x8bbNh"
+    "rich_text_PPc38H",
+    "multirow_k7NfKb",
+    "featured_product_YaDmhN"
   ]
 }

@@ -35,6 +35,7 @@
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'jquery.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
     {%- liquid
@@ -280,27 +281,27 @@
         cart_change_url: '{{ routes.cart_change_url }}',
         cart_update_url: '{{ routes.cart_update_url }}',
         cart_url: '{{ routes.cart_url }}',
-        predictive_search_url: '{{ routes.predictive_search_url }}'
+        predictive_search_url: '{{ routes.predictive_search_url }}',
       };
 
       window.cartStrings = {
         error: `{{ 'sections.cart.cart_error' | t }}`,
-        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
-      }
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+      };
 
       window.variantStrings = {
         addToCart: `{{ 'products.product.add_to_cart' | t }}`,
         soldOut: `{{ 'products.product.sold_out' | t }}`,
         unavailable: `{{ 'products.product.unavailable' | t }}`,
         unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
-      }
+      };
 
       window.accessibilityStrings = {
         imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
         shareSuccess: `{{ 'general.share.success_message' | t }}`,
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
-      }
+      };
     </script>
 
     {%- if settings.predictive_search_enabled -%}
@@ -309,23 +310,23 @@
 
     {% if settings.disable_inspect %}
       <script>
-        window.addEventListener("contextmenu", (e) => {
+        window.addEventListener('contextmenu', (e) => {
           e.preventDefault();
         });
-        document.addEventListener("selectstart", (e) => {
+        document.addEventListener('selectstart', (e) => {
           e.preventDefault();
         });
-        document.addEventListener('DOMContentLoaded', function() {
-          document.querySelectorAll('img').forEach(img => {
-            img.addEventListener('dragstart', function(e) {
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('img').forEach((img) => {
+            img.addEventListener('dragstart', function (e) {
               e.preventDefault();
-            })
-          })
-        })
+            });
+          });
+        });
         function ctrlShiftKey(e, keyCode) {
           return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
         }
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
           if (
             event.keyCode === 123 ||
             ctrlShiftKey(e, 'I') ||
@@ -335,9 +336,8 @@
           ) {
             e.preventDefault();
           }
-        })
+        });
       </script>
     {% endif %}
-  
-</body>
+  </body>
 </html>
