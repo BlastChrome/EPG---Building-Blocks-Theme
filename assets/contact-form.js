@@ -1,3 +1,9 @@
+/*
+    This form will hitch a ride on the default Shopify form
+    and add the user's info to the ConvertKit mailing list
+    in the background
+*/
+
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.getElementById("ContactForm");
   if (!contactForm) return; // Exit if the form doesn't exist
