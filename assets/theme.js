@@ -1,39 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const contactForm = document.getElementById("ContactForm");
-  if (!contactForm) return; // Exit if the form doesn't exist
-
+  const contactForms = Array.from(document.querySelectorAll("form"));
   const kitEndPoint = "https://app.kit.com/forms/7290453/subscriptions";
+  // Exit if no forms are found
+  if (!contactForms.length) return;
 
-  if (contactForm) {
+  // Iterate over each form
+  contactForms.every((contactForm) => {
+    if (contactForm.id == "captchaForm") return false;
+
     contactForm.addEventListener("submit", (e) => {
-      e.preventDefault(); // Prevent default form submission
+      debugger;
+      e.preventDefault();
 
       // Capture form data
       const formData = new FormData(contactForm);
 
-      // Rename 'email' field to 'email_address' for ConvertKit
-      if (formData.has("email")) {
-        formData.set("email_address", formData.get("email"));
-        formData.delete("email"); // Optional: Remove original field
-      }
+      // Convert Shopify 'email' to ConvertKit 'email_address'
+      formData.set("email_address", formData.get("email"));
+      formData.delete("email");
 
-      // Example of how to log the data or send it via Ajax
-      console.log("Form submitted!", Object.fromEntries(formData.entries()));
-
-      // Send data to ConvertKit via Ajax
+      // Submit the form via Fetch API
       fetch(kitEndPoint, {
         method: "POST",
         body: formData,
       })
-        .then((response) => response.json())
+        .then((response) => {
+          if (
+            response.headers.get("content-type")?.includes("application/json")
+          ) {
+            return response.json();
+          } else {
+            return response.text(); // Handle non-JSON responses
+          }
+        })
         .then((data) => {
-          console.log("Success:", data);
-          // Handle success (e.g., show success message)
+          if (typeof data === "string") {
+            alert("Received HTML response:", data);
+            console.log("Thank you for subscribing!");
+          } else {
+            console.log(data);
+            alert("Success:", data);
+            console.log("Thank you for subscribing!");
+          }
         })
         .catch((error) => {
-          console.error("Error:", error);
-          // Handle error (e.g., show error message)
+          alert("Error:", error);
+          console.log("There was a problem. Please try again.");
         });
     });
-  }
+  });
 });

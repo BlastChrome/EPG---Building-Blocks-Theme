@@ -5,12 +5,16 @@
 */
 
 document.addEventListener("DOMContentLoaded", () => {
-  const contactForm = document.getElementById("ContactForm");
-  if (!contactForm) return; // Exit if the form doesn't exist
+  // Get all forms with a specific class (or tag name)
+  const contactForms = document.querySelectorAll("form"); // Targets all forms
+
+  // Exit if no forms are found
+  if (!contactForms.length) return;
 
   const kitEndPoint = "https://app.kit.com/forms/7290453/subscriptions";
 
-  if (contactForm) {
+  // Iterate over each form
+  contactForms.forEach((contactForm) => {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault(); // Prevent default form submission
 
@@ -23,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         formData.delete("email"); // Optional: Remove original field
       }
 
-      // Example of how to log the data or send it via Ajax
+      // Log form data
       console.log("Form submitted!", Object.fromEntries(formData.entries()));
 
       // Send data to ConvertKit via Ajax
@@ -33,13 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("Success:", data);
-          // Handle success (e.g., show success message)
+          alert("Success:", data);
+          // Handle success (e.g., no client-side action needed)
         })
         .catch((error) => {
-          console.error("Error:", error);
-          // Handle error (e.g., show error message)
+          alert("Error:", error);
+          // Handle error silently (no client-side action)
         });
     });
-  }
+  });
 });
