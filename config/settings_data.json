@@ -1,9 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "disable_inspect": true,
-    "logo": "shopify:\/\/shop_images\/Epic_gear_pros.png",
+    "logo": "shopify://shop_images/Epic_gear_pros.png",
     "logo_width": 220,
-    "favicon": "shopify:\/\/shop_images\/Epic_gear_pros.png",
+    "favicon": "shopify://shop_images/Epic_gear_pros.png",
     "colors_solid_button_labels": "#FDFBF7",
     "colors_accent_1": "#64af01",
     "gradient_accent_1": "",
@@ -110,7 +119,7 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -164,30 +173,31 @@
       "promo-popup": {
         "type": "promo-popup",
         "settings": {
-          "mode": "disabled",
+          "mode": "testing",
           "popup_seconds": 5,
           "popup_days": 30,
-          "display_timer": true,
+          "display_timer": false,
           "timer_duration": 3,
+          "image": "shopify://shop_images/modal-bg.jpg",
           "layout": "image_second",
           "color_scheme": "background-1",
-          "heading_prefix": "Sign up and",
-          "heading": "GET 10% OFF",
-          "heading_size": "h1",
+          "heading_prefix": "Sign up",
+          "heading": "Enter for a chance to GET 40% OFF",
+          "heading_size": "h2",
           "heading_suffix": "",
-          "text": "<p>Sign up for our email newsletter for special discounts and exclusive offers.<\/p>",
+          "text": "<p>Sign up for our email newsletter for special discounts and exclusive offers.</p>",
           "button_label": "Sign up",
           "dismiss_btn_label": "No thanks",
-          "discount_code": "EXAMPLE10",
-          "success_heading_prefix": "Enjoy your",
-          "success_heading": "DISCOUNT!",
+          "discount_code": "",
+          "success_heading_prefix": "",
+          "success_heading": "",
           "success_heading_size": "h1",
           "success_heading_suffix": "",
-          "success_text": "<p>Use the code bellow to get 10% off your whole order!<\/p>",
-          "discount_code_label": "Discount code:",
-          "copy_button_label": "Copy",
-          "copy_message": "Code copied successfully!",
-          "success_dismiss_btn_label": "Close",
+          "success_text": "",
+          "discount_code_label": "",
+          "copy_button_label": "",
+          "copy_message": "",
+          "success_dismiss_btn_label": "",
           "success_display_image": true
         }
       },
@@ -216,9 +226,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -329,7 +337,7 @@
       "sold_out_badge_color_scheme": "inverse",
       "accent_icons": "text",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": "100",
       "social_twitter_link": "",
       "social_facebook_link": "",
