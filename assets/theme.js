@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const contactForms = Array.from(document.querySelectorAll(".convert-form"));
-
   if (!contactForms.length) return;
-
   contactForms.forEach((contactForm) => {
     contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      debugger;
 
       const formData = new FormData(contactForm);
       const email = formData.get("contact[email]");

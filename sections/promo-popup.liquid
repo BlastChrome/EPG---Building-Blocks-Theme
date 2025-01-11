@@ -72,7 +72,7 @@
           </div>
         {%- endif -%}
         <div class="popup-modal__email-form">
-          {% form 'customer', class: 'newsletter-form' %}
+          {% form 'customer', class: 'newsletter-form convert-form' %}
             <input type="hidden" name="contact[tags]" value="newsletter">
             <div class="newsletter-form__field-wrapper">
               <div class="field">
@@ -254,276 +254,276 @@
 
 {% schema %}
 {
-    "name": "Promo Pop-Up",
-    "limit": 1,
-    "disabled_on": {
-      "groups": ["header", "footer"]
+  "name": "Promo Pop-Up",
+  "limit": 1,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "[Tutorial on how to set up](https://www.youtube.com/watch?v=2c1CCF3gsvI)"
     },
-    "settings": [
+    {
+      "type": "header",
+      "content": "Popup"
+    },
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "Display mode",
+      "default": "disabled",
+      "options": [
         {
-          "type": "paragraph",
-          "content": "[Tutorial on how to set up](https://www.youtube.com/watch?v=2c1CCF3gsvI)"
+          "value": "disabled",
+          "label": "Disabled"
         },
         {
-          "type": "header",
-          "content": "Popup"
+          "value": "testing",
+          "label": "Test mode"
         },
         {
-            "type": "select",
-            "id": "mode",
-            "label": "Display mode",
-            "default": "disabled",
-            "options": [
-                {
-                    "value": "disabled",
-                    "label": "Disabled"
-                },
-                {
-                    "value": "testing",
-                    "label": "Test mode"
-                },
-                {
-                    "value": "success_testing",
-                    "label": "Success test mode"
-                },
-                {
-                    "value": "enabled",
-                    "label": "Enabled"
-                }
-            ],
-            "info": "Test mode displays your popup without delay each time even after dismissing it. Switch to Enabled once you are happy with how your popup looks."
+          "value": "success_testing",
+          "label": "Success test mode"
         },
         {
-            "type": "range",
-            "id": "popup_seconds",
-            "label": "Delay",
-            "info": "Time interval, in seconds, after which the modal will appear.",
-            "default": 5,
-            "min": 2,
-            "max": 60,
-            "step": 1,
-            "unit": "sec"
-        },
-        {
-            "type": "range",
-            "id": "popup_days",
-            "label": "Frequency",
-            "default": 30,
-            "info": "Number of days before a dismissed popup reappears",
-            "min": 2,
-            "max": 30,
-            "step": 1,
-            "unit": "day"
-        },
-        {
-            "type": "checkbox",
-            "id": "display_timer",
-            "label": "Display countdown timer",
-            "default": true,
-            "info": "IMPORTANT: Due to liquid limitations, ONLY IN TEST MODE, you need to refresh the page after certain changes to display the correct timer. This does NOT happen when the Pop Up is published."
-        },
-        {
-            "type": "range",
-            "id": "timer_duration",
-            "min": 1,
-            "max": 10,
-            "default": 3,
-            "step": 0.5,
-            "unit": "min",
-            "label": "Timer duration"
-        },
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-        },
-        {
-            "type": "select",
-            "id": "layout",
-            "label": "Desktop image position",
-            "options": [
-                {
-                    "value": "image_first",
-                    "label": "Image first"
-                },
-                {
-                    "value": "image_second",
-                    "label": "Image second"
-                }
-            ],
-            "default": "image_first"
-        },
-        {
-          "type": "select",
-          "id": "color_scheme",
-          "options": [
-            {
-              "value": "background-1",
-              "label": "t:sections.all.colors.background_1.label"
-            },
-            {
-              "value": "background-2",
-              "label": "t:sections.all.colors.background_2.label"
-            },
-            {
-              "value": "inverse",
-              "label": "t:sections.all.colors.inverse.label"
-            }
-          ],
-          "default": "background-1",
-          "label": "t:sections.all.colors.label"
-        },
-        {
-            "type": "header",
-            "content": "Content"
-        },
-        {
-            "type": "text",
-            "id": "heading_prefix",
-            "label": "Heading prefix",
-            "default": "Sign up and"
-        },
-        {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading",
-            "default": "GET 10% OFF"
-        },
-        {
-            "type": "select",
-            "id": "heading_size",
-            "options": [
-                {
-                    "value": "h3",
-                    "label": "Extra Small"
-                },
-                {
-                    "value": "h2",
-                    "label": "Small"
-                },
-                {
-                    "value": "h1",
-                    "label": "Medium"
-                },
-                {
-                    "value": "h0",
-                    "label": "Large"
-                }
-            ],
-            "default": "h1",
-            "label": "Heading size"
-        },
-        {
-            "type": "text",
-            "id": "heading_suffix",
-            "label": "Heading suffix"
-        },
-        {
-            "type": "richtext",
-            "id": "text",
-            "label": "Text",
-            "default": "<p>Sign up for our email newsletter for special discounts and exclusive offers.</p>"
-        },
-        {
-            "type": "text",
-            "id": "button_label",
-            "label": "Sign up button label",
-            "default": "Sign up",
-            "info": "NOTE: Make sure you put in your own discount code in the settings under \"SUCCESS\" category down bellow."
-        },
-        {
-            "type": "text",
-            "id": "dismiss_btn_label",
-            "label": "Dismiss button label",
-            "default": "No thanks"
-        },
-        {
-          "type": "header",
-          "content": "Success"
-        },
-        {
-            "type": "text",
-            "id": "discount_code",
-            "label": "Discount code",
-            "default": "EXAMPLE10"
-        },
-        {
-            "type": "text",
-            "id": "success_heading_prefix",
-            "label": "Heading prefix",
-            "default": "Enjoy your"
-        },
-        {
-            "type": "text",
-            "id": "success_heading",
-            "label": "Heading",
-            "default": "DISCOUNT!"
-        },
-        {
-            "type": "select",
-            "id": "success_heading_size",
-            "options": [
-                {
-                    "value": "h3",
-                    "label": "Extra Small"
-                },
-                {
-                    "value": "h2",
-                    "label": "Small"
-                },
-                {
-                    "value": "h1",
-                    "label": "Medium"
-                },
-                {
-                    "value": "h0",
-                    "label": "Large"
-                }
-            ],
-            "default": "h1",
-            "label": "Heading size"
-        },
-        {
-            "type": "text",
-            "id": "success_heading_suffix",
-            "label": "Heading suffix"
-        },
-        {
-            "type": "richtext",
-            "id": "success_text",
-            "label": "Text",
-            "default": "<p>Use the code bellow to get 10% off your whole order!</p>"
-        },
-        {
-            "type": "text",
-            "id": "discount_code_label",
-            "label": "Discount code field label",
-            "default": "Discount code:"
-        },
-        {
-            "type": "text",
-            "id": "copy_button_label",
-            "label": "Copy button label",
-            "default": "Copy"
-        },
-        {
-            "type": "text",
-            "id": "copy_message",
-            "label": "Copied successful message",
-            "default": "Code copied successfully!"
-        },
-        {
-            "type": "text",
-            "id": "success_dismiss_btn_label",
-            "label": "Dismiss button label",
-            "default": "Close"
-        },
-        {
-            "type": "checkbox",
-            "id": "success_display_image",
-            "label": "Display image in success mode",
-            "default": true
+          "value": "enabled",
+          "label": "Enabled"
         }
-    ]
+      ],
+      "info": "Test mode displays your popup without delay each time even after dismissing it. Switch to Enabled once you are happy with how your popup looks."
+    },
+    {
+      "type": "range",
+      "id": "popup_seconds",
+      "label": "Delay",
+      "info": "Time interval, in seconds, after which the modal will appear.",
+      "default": 5,
+      "min": 2,
+      "max": 60,
+      "step": 1,
+      "unit": "sec"
+    },
+    {
+      "type": "range",
+      "id": "popup_days",
+      "label": "Frequency",
+      "default": 30,
+      "info": "Number of days before a dismissed popup reappears",
+      "min": 2,
+      "max": 30,
+      "step": 1,
+      "unit": "day"
+    },
+    {
+      "type": "checkbox",
+      "id": "display_timer",
+      "label": "Display countdown timer",
+      "default": true,
+      "info": "IMPORTANT: Due to liquid limitations, ONLY IN TEST MODE, you need to refresh the page after certain changes to display the correct timer. This does NOT happen when the Pop Up is published."
+    },
+    {
+      "type": "range",
+      "id": "timer_duration",
+      "min": 1,
+      "max": 10,
+      "default": 3,
+      "step": 0.5,
+      "unit": "min",
+      "label": "Timer duration"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Desktop image position",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "Image first"
+        },
+        {
+          "value": "image_second",
+          "label": "Image second"
+        }
+      ],
+      "default": "image_first"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading_prefix",
+      "label": "Heading prefix",
+      "default": "Sign up and"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "GET 10% OFF"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "Extra Small"
+        },
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "text",
+      "id": "heading_suffix",
+      "label": "Heading suffix"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Sign up for our email newsletter for special discounts and exclusive offers.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Sign up button label",
+      "default": "Sign up",
+      "info": "NOTE: Make sure you put in your own discount code in the settings under \"SUCCESS\" category down bellow."
+    },
+    {
+      "type": "text",
+      "id": "dismiss_btn_label",
+      "label": "Dismiss button label",
+      "default": "No thanks"
+    },
+    {
+      "type": "header",
+      "content": "Success"
+    },
+    {
+      "type": "text",
+      "id": "discount_code",
+      "label": "Discount code",
+      "default": "EXAMPLE10"
+    },
+    {
+      "type": "text",
+      "id": "success_heading_prefix",
+      "label": "Heading prefix",
+      "default": "Enjoy your"
+    },
+    {
+      "type": "text",
+      "id": "success_heading",
+      "label": "Heading",
+      "default": "DISCOUNT!"
+    },
+    {
+      "type": "select",
+      "id": "success_heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "Extra Small"
+        },
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "text",
+      "id": "success_heading_suffix",
+      "label": "Heading suffix"
+    },
+    {
+      "type": "richtext",
+      "id": "success_text",
+      "label": "Text",
+      "default": "<p>Use the code bellow to get 10% off your whole order!</p>"
+    },
+    {
+      "type": "text",
+      "id": "discount_code_label",
+      "label": "Discount code field label",
+      "default": "Discount code:"
+    },
+    {
+      "type": "text",
+      "id": "copy_button_label",
+      "label": "Copy button label",
+      "default": "Copy"
+    },
+    {
+      "type": "text",
+      "id": "copy_message",
+      "label": "Copied successful message",
+      "default": "Code copied successfully!"
+    },
+    {
+      "type": "text",
+      "id": "success_dismiss_btn_label",
+      "label": "Dismiss button label",
+      "default": "Close"
+    },
+    {
+      "type": "checkbox",
+      "id": "success_display_image",
+      "label": "Display image in success mode",
+      "default": true
+    }
+  ]
 }
 {% endschema %}
