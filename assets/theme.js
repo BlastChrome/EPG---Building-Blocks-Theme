@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  alert("here");
   const contactForms = Array.from(document.querySelectorAll(".convert-form"));
 
   if (!contactForms.length) return;
