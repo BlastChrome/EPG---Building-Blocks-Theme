@@ -224,6 +224,32 @@
           "btn_animation": true,
           "color_scheme": "accent-1"
         }
+      },
+      "promo-popup-newsletter": {
+        "type": "promo-popup-newsletter",
+        "settings": {
+          "mode": "enabled",
+          "popup_seconds": 5,
+          "popup_days": 30,
+          "display_timer": false,
+          "timer_duration": 3,
+          "image": "shopify://shop_images/modal-bg.jpg",
+          "layout": "image_first",
+          "color_scheme": "background-1",
+          "heading_prefix": "Signup for a chance",
+          "heading": "To Get 40% Off!",
+          "heading_size": "h2",
+          "heading_suffix": "",
+          "text": "<p>Sign up for our email newsletter for special discounts and exclusive offers.</p>",
+          "button_label": "Sign up",
+          "dismiss_btn_label": "No thanks",
+          "success_heading_prefix": "Welcome To The",
+          "success_heading": "Gear Club!",
+          "success_heading_size": "h2",
+          "success_heading_suffix": "",
+          "success_dismiss_btn_label": "",
+          "success_display_image": true
+        }
       }
     },
     "content_for_index": []
